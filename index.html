@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Naori</title>
+    <style>
+        /* Estilos generales del cuerpo de la página */
+        body {
+            background-color: black; /* Fondo negro */
+            color: white; /* Texto en color blanco para contraste */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Fuente genérica para compatibilidad */
+            display: flex;
+            justify-content: center; /* Centra el contenido horizontalmente */
+            align-items: center; /* Centra el contenido verticalmente */
+            height: 100vh; /* Ocupa toda la altura de la ventana */
+        }
+
+        /* Contenedor principal para alinear los elementos */
+        .main-container {
+            display: flex;
+            align-items: center; /* Alinea verticalmente el logo y los botones */
+            width: 90%; /* Ancho del contenedor principal */
+            max-width: 960px; /* Ancho máximo para pantallas grandes */
+        }
+
+        /* Recuadro para el logo a la izquierda */
+        .logo-container {
+            flex: 1; /* Ocupa el 50% del espacio del contenedor principal */
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-container img {
+            max-width: 100%; /* Asegura que el logo no se salga de su contenedor */
+            height: auto; /* Mantiene la proporción del logo */
+        }
+
+        /* Recuadro para los botones a la derecha */
+        .buttons-container {
+            flex: 1; /* Ocupa el otro 50% del espacio */
+            display: flex;
+            flex-direction: column; /* Apila los botones verticalmente */
+            align-items: center; /* Centra los botones horizontalmente */
+            gap: 20px; /* Espacio entre los botones */
+        }
+
+        /* Estilo de los botones */
+        .button {
+            display: block;
+            padding: 15px 30px;
+            border: 2px solid white; /* Borde blanco para que resalten */
+            color: white;
+            text-decoration: none; /* Quita el subrayado de los enlaces */
+            text-align: center;
+            font-size: 1.2em;
+            width: 200px; /* Ancho fijo para los botones */
+            border-radius: 8px; /* Bordes redondeados */
+            transition: background-color 0.3s, color 0.3s; /* Transición suave al pasar el mouse */
+        }
+
+        /* Efecto al pasar el mouse sobre los botones */
+        .button:hover {
+            background-color: white; /* Cambia el fondo a blanco */
+            color: black; /* Cambia el texto a negro */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="logo-container">
+            <img src="logo.jpeg" alt="Logo Red Naori">
+        </div>
+
+        <div class="buttons-container">
+            <a href="https://wa.me/91170160806" target="_blank" class="button">Sasha</a>
+            
+            <a href="https://wa.me/qr/7NJHLRDG7CUSE1" target="_blank" class="button">Vikingo</a>
+        </div>
+    </div>
+
+</body>
+</html>
